@@ -1,0 +1,150 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+.game-play-area {
+    width: 800px;
+    height: 600px;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.dashboard {
+    color: white;
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.dashboard > div {
+    width: 48%;
+    text-align: right;
+    display: inline-block;
+}
+
+.dashboard .progress {
+    height: 20px;
+    width: 300px;
+    background-color: #333;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.progress-bar {
+    background-color: greenyellow;
+    width: 100%;
+    height: 20px;
+    border-radius: 25px;
+}
+
+#gameOver {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #333;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#highScores {
+    position: absolute;
+    top: 0;
+    left: 808px;
+    margin: 9px;
+    background-color: lightblue;
+}
+
+#highScores h3 {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#highScores ol li {
+    list-style-position: inside;
+}
+
+#scoreBoard {
+    padding: 0;
+    margin: 0 15px 15px;
+}
+
+#playerName {
+    width: 255px;
+    height: 50px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.btn-start {
+    width: 260px;
+    height: 50px;
+    background-color: lightcoral;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-start:disabled {
+    background-color: lightgray;
+}
+
+#container {
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+}
+
+.base {
+    border-radius: 5px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 380px;
+    top: 280px;
+    background-color: #333;
+    color: white;
+    margin: auto;
+}
+
+.box {
+    position: absolute;
+    left: 385px;
+    top: 285px;
+    border: 1px solid black;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: aqua;
+    transition: all 0.1s ease-in-out;
+}
+
+.turret {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    margin-left: 35%;
+    bottom: 35%;
+    border-radius: 5px;
+    background-color: darkgrey;
+}
+
+.fire-me {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,0,0.8);
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.badguy {
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    border: 1px dotted #555;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 25px;
+}

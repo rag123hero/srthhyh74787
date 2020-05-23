@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tank Shooter Game</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="game-play-area">
+            <div class="dashboard">
+                <div><span class="score-dash">0</span></div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div id="container">
+                <div id="gameOver">
+                    <span class="message">Click to Start Game</span><br>
+                    <input type="text" id='playerName' placeholder="Enter your name..."></br>
+                    <button class="btn-start" disabled>Start Game</button>
+                </div>
+                <div class="base"></div>
+                <div class="box">
+                    <div class="turret"></div>
+                </div>
+            </div>
+        </div>
+        <div id="highScores">
+            <h3>Highscores:</h3>
+            <ol id="scoreBoard">
+            </ol>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
